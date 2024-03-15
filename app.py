@@ -91,14 +91,7 @@ def retrival_page():
             else:
                 st.warning('Please select at least one column.')
 
-    # elif query_type == 'Filter Data Based on Condition':
-    #     table_name = st.selectbox('Select table:', ['person', 'incident', 'participation'])
-    #     column_name = st.text_input('Enter column name to filter:', 'state')
-    #     filter_value = st.text_input('Enter filter value:', 'California')
-    #     data = filter_data(conn, table_name, column_name, filter_value)
-    #     if data:
-    #         st.write('Query Result:')
-    #         st.write(data)
+  
 
     elif query_type == 'Retrieve Suspects':
         role = st.selectbox('Select role:', ['victim', 'witnessed', 'suspect'])
@@ -109,9 +102,9 @@ def retrival_page():
             st.write(df1)
 
 
-# Streamlit web application
+# Streamlit main web application
 def main():
-    st.title('Database Interaction')
+    st.title('Crime Database')
     st.sidebar.image('img\logo2.jpg',use_column_width=True)
     st.sidebar.title("Navigation Pane")
     
