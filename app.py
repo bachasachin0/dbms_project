@@ -104,7 +104,19 @@ def retrival_page():
 
 # Streamlit main web application
 def main():
-    st.title('Crime Database')
+    
+    st.set_page_config(
+    page_title="Crime databse Application",
+    page_icon="🖇️🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    
+    )
+
+    st.markdown(""" <style> .font {
+    font-size:50px ; font-family: 'Cooper Black'; color: #6cb9f5;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Crime Database</p>', unsafe_allow_html=True)
     st.sidebar.image('img\logo2.jpg',use_column_width=True)
     st.sidebar.title("Navigation Pane")
     
@@ -123,15 +135,6 @@ def main():
     else:
         st.error("Failed to connect to the database.")
    
-
-
-
-
-
-
-    
-      
-    
 
 if __name__ == '__main__':
     main()
