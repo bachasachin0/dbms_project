@@ -1,4 +1,6 @@
 mysql-connector-python
+pandas
 streamlit
 python-dotenv
+ibm_db==3.1.0
 -e .
