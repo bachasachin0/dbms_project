@@ -13,7 +13,7 @@ def insertion_page():
         st.header('Add Person Data')
         name = st.text_input('Name:', key='name_input')
         dob = st.date_input('Date of Birth:', key='dob_input')
-        ssn = st.text_input('Social Security Number:', key='ssn_input')
+        ssn = st.text_input('Social Security Number: (eg: 9xx-8xx-7xx)', key='ssn_input')
         st_name = st.text_input('State:', key='st_name_input')
         city = st.text_input('City:', key='city_input')
         if st.button('Add Person Data'):
