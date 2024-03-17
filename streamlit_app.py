@@ -117,7 +117,7 @@ def main():
     font-size:50px ; font-family: 'Cooper Black'; color: #6cb9f5;} 
     </style> """, unsafe_allow_html=True)
     st.markdown('<p class="font">Crime Database</p>', unsafe_allow_html=True)
-    st.sidebar.image('img\logo2.jpg',use_column_width=True)
+    st.sidebar.image('img/logo2.jpg',use_column_width=True)
     st.sidebar.title("Navigation Pane")
     
     page = st.sidebar.radio("Go to", ("Insert Data", "Retrieve Data"))
