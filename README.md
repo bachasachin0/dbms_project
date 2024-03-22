@@ -10,7 +10,7 @@ This project aims to develop a comprehensive crime database system that allows u
 
 ## ER Diagram
 
-![ER Diagram](img/er_daigram.jpg)
+![ER Diagram](img/er__daigram1.jpg)
 
 Insert ER diagram image here.
 
